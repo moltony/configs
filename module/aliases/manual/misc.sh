@@ -146,5 +146,6 @@ alias rkgkbackup='backupchan preset upload rkgk' # upload my doodles
 alias p9m='pkill -9 mpv' # Kill mpv in case it breaks
 alias :q='exit' # hjkl anyone?
 alias bchan='backupchan' # shorter
+alias nath='math' # kagamine len is my waifu
 
 unalias wine # sybau🥀🥀
