@@ -671,17 +671,34 @@ lsfuncs() {
 #
 #
 adelightful() {
-    # d stands for delight
-    d[0]="a delightful"
-    d[1]="a beautiful"
-    d[2]="an exquisite"
-    d[3]="a lovely"
-    d[4]="a pleasant"
-    d[5]="a delicious" # why not
-    d[6]="a heavenly"
-    local size=${#d[@]}
-    local i=$(( RANDOM % size ))
-    echo "${d[$i]}"
+    if [ "$1" == "Monday" ]; then
+        # Monday-exclusive: Miserable Mondays
+        # m stands for misery
+        m[0]="a miserable"
+        m[1]="soul-crushing"
+        m[2]="a daunting"
+        m[3]="a stupid"
+        m[4]="a disgusting"
+        m[5]="a dreadful"
+        m[6]="a relentless"
+        m[7]="an exhausting"
+        m[8]="an annoying"
+        local sizee=${#m[@]}
+        local ii=$(( RANDOM % sizee ))
+        echo "${m[$ii]}"
+    else
+        # d stands for delight
+        d[0]="a delightful"
+        d[1]="a beautiful"
+        d[2]="an exquisite"
+        d[3]="a lovely"
+        d[4]="a pleasant"
+        d[5]="a delicious" # why not
+        d[6]="a heavenly"
+        local size=${#d[@]}
+        local i=$(( RANDOM % size ))
+        echo "${d[$i]}"
+    fi
 }
 
 # Cat a config in the repo
@@ -1485,7 +1502,7 @@ bashrc-postinit() {
     goofy_ahh_6_space_echo "\033[0;35m:)\033[0m Hi \033[0;32m${USER^}-$(some_chan)\033[0m! This is \033[0;32m$(hostname)\033[0m."
 
     local dotw="$(LC_ALL=C date +"%A")"
-    [ "$dotw" == "Friday" ] && goofy_ahh_6_space_echo "\033[0;32m^^\033[0m ITS FRIDAY!!!!!!!!!" || goofy_ahh_6_space_echo "\033[0;36m**\033[0m It is currently \033[0;36m$(LC_ALL=C date +"%I:%M %p")\033[0m on $(adelightful) \033[0;36m$dotw\033[0m."
+    [ "$dotw" == "Friday" ] && goofy_ahh_6_space_echo "\033[0;32m^^\033[0m ITS FRIDAY!!!!!!!!!" || goofy_ahh_6_space_echo "\033[0;36m**\033[0m It is currently \033[0;36m$(LC_ALL=C date +"%I:%M %p")\033[0m on $(adelightful $dotw) \033[0;36m$dotw\033[0m."
 
     goofy_ahh_6_space_echo "\033[0;36m**\033[0m Configs version: $(vercfgs)."
 

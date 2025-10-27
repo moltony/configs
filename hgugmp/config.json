@@ -1,0 +1,84 @@
+{
+    "screens": [
+        {
+            "width": 540,
+            "height": 240,
+            "background": {
+                "type": "image",
+                "image": {
+                    "file": "~/configs/hgugmp/assets/background.gif",
+                    "frame_delay": 2
+                },
+                "mode": "zoom"
+            },
+            "items": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Apps",
+                        "font": {
+                            "name": "Dialog",
+                            "size": 24,
+                            "style": "italic"
+                        },
+                        "color": {
+                            "r": 255,
+                            "g": 255,
+                            "b": 0
+                        }
+                    },
+                    "offset": {
+                        "y": 10
+                    }
+                },
+                {
+                    "type": "launcher",
+                    "arguments": ["firefox"],
+                    "text": {
+                        "text": {
+                            "text": "firefox",
+                            "color": {
+                                "r": 255,
+                                "g": 255,
+                                "b": 0
+                            }
+                        }
+                    },
+                    "selected_text": {
+                        "text": {
+                            "text": "browse the web",
+                            "color": {
+                                "r": 255,
+                                "g": 255,
+                                "b": 255
+                            }
+                        }
+                    },
+                    "image": {
+                        "image": {
+                            "file": "~/configs/hgugmp/assets/firefox.png"
+                        },
+                        "alignment": "left",
+                        "offset": {
+                            "x": 5
+                        }
+                    }
+                },
+                {
+                    "type": "switch_screen",
+                    "screen": 1,
+                    "text": {
+                        "text": {
+                            "text": "games",
+                            "color": {
+                                "r": 255,
+                                "g": 255,
+                                "b": 0
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
