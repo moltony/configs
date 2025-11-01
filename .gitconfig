@@ -26,3 +26,5 @@
 	spellcheck = false
 [http]
 	postBuffer = 1048576000
+[safe]
+	directory = /home/moltony/windows/dev/pixiv-monitor
