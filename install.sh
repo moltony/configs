@@ -48,6 +48,7 @@ cpcfgd compton.conf .config/compton
 cpcfgd melonDS.ini .config/melonDS
 cpcfgd bleachbit.ini .config/bleachbit
 cpcfgd gdbinit .config/gdb
+cpcfgd bcrc .config/bc
 cpcfgdf i3cfg .config/i3/config
 cpcfgdf qutebrowser.py .config/qutebrowser/config.py
 cpcfgdf obrc.xml .config/openbox/rc.xml

@@ -30,6 +30,7 @@ alias shutdown='sudo shutdown now' # Shutdown NOW!
 alias ysnc='yay -S --noconfirm' # Install AUR package with yay
 alias ysyu='yay -Syu --noconfirm' # Update AUR packages with yay
 alias yrnc='yay -R --noconfirm' # Say pai pai to AUR package
+alias bc='bc ~/.config/bc/bcrc -q' # Start bc with a configuration file
 alias math='bc -l' # Bring up a calculator
 alias ghs='grephist' # grephist short edition
 alias ping='ping -c 5' # make ping stop after like 5 times that it pinged
