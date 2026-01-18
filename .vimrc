@@ -35,12 +35,14 @@ colorscheme codedark
 " code at the same time!
 " The only downside of this is that it throws a bunch of errors on startup.
 " I'm used to it.
-hi Normal guibg= None ctermbg=None
-hi NormalNC guibg=None ctermbg=None
-hi EndOfBuffer guibg=None ctermbg=None
-hi VertSplit guibg=None ctermbg=None
-hi StatusLine guibg=None ctermbg=None
-hi LineNr guibg=None ctermbg=None
+if ! has("gui_running") " This doesn't work in gvim, and instead makes the background white. I was almost blinded.
+    hi Normal guibg= None ctermbg=None
+    hi NormalNC guibg=None ctermbg=None
+    hi EndOfBuffer guibg=None ctermbg=None
+    hi VertSplit guibg=None ctermbg=None
+    hi StatusLine guibg=None ctermbg=None
+    hi LineNr guibg=None ctermbg=None
+endif
 
 " Nums on/off custom command
 command! NumsOff set nonumber norelativenumber
