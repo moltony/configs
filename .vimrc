@@ -31,18 +31,14 @@ let g:mkdp_auto_start = 0
 " Color scheme: VSCode Dark (the irony)
 colorscheme codedark
 
-" Make the background transparent. I can watch Umamusume: Pretty Derby and
+" Make the background transparent in the terminal. I can watch Umamusume: Pretty Derby and
 " code at the same time!
-" The only downside of this is that it throws a bunch of errors on startup.
-" I'm used to it.
-if ! has("gui_running") " This doesn't work in gvim, and instead makes the background white. I was almost blinded.
-    hi Normal guibg= None ctermbg=None
-    hi NormalNC guibg=None ctermbg=None
-    hi EndOfBuffer guibg=None ctermbg=None
-    hi VertSplit guibg=None ctermbg=None
-    hi StatusLine guibg=None ctermbg=None
-    hi LineNr guibg=None ctermbg=None
-endif
+hi Normal ctermbg=None
+hi NormalNC ctermbg=None
+hi EndOfBuffer ctermbg=None
+hi VertSplit ctermbg=None
+hi StatusLine  ctermbg=None
+hi LineNr  ctermbg=None
 
 " Nums on/off custom command
 command! NumsOff set nonumber norelativenumber
