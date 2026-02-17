@@ -148,5 +148,6 @@ alias p9m='pkill -9 mpv' # Kill mpv in case it breaks
 alias :q='exit' # hjkl anyone?
 alias bchan='backupchan' # shorter
 alias nath='math' # kagamine len is my waifu
+alias bchanl='backupchan --host 127.0.0.1 --port 5000' # i am the debug
 
 unalias wine # sybau🥀🥀
