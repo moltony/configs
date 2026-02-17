@@ -150,4 +150,6 @@ alias bchan='backupchan' # shorter
 alias nath='math' # kagamine len is my waifu
 alias bchanl='backupchan --host 127.0.0.1 --port 5000' # i am the debug
 
-unalias wine # sybau🥀🥀
+if [ "$(type -t wine)" = "alias" ]; then
+    unalias wine # sybau🥀🥀
+fi
