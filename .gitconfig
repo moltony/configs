@@ -28,3 +28,6 @@
 	postBuffer = 1048576000
 [safe]
 	directory = /home/moltony/windows/dev/pixiv-monitor
+	directory = /home/moltony/windows/dev/komentari/
+[core]
+	autocrlf = input
