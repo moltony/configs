@@ -781,14 +781,6 @@ dialogbox() {
     echo -en "\033[13;0H"
 }
 
-suddenly() {
-    local a=$(alias | shuf -n1 | cut -d= -f1 | sed 's/alias //')
-    if [[ -n "$a" ]]; then
-        unalias "$a"
-        dialogbox $'Suddenly...\n\nYou notice that something feels a bit off.'
-    fi
-}
-
 # Inconveniences
 inconveniences() {
     # Ensure inconveniences run
@@ -808,17 +800,6 @@ inconveniences() {
     local hell_yeah2=$(( RANDOM % 100 ))
     if (( hell_yeah <= 1 )) && (( hell_yeah2 <= 1 )); then
         steal-your-precious-thing
-    fi
-
-    # Inconvenience 4: ...uh...I'm thinking...
-    local kek=$(( RANDOM % 100 ))
-    if (( kek <= 4 )); then
-        thinking
-    fi
-
-    # Inconvenience 5: magically delete a random alias
-    if (( RANDOM % 100 == 0 )); then
-        suddenly
     fi
 
     DementiaShell=1
