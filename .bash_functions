@@ -1066,6 +1066,7 @@ rbsongrn() {
 }
 
 # Nag the user for not using fastfetch
+# god this is so fucking cringe
 fastfetchnag() {
     echo "Hey, have you tried using fastfetch? It's fast, customizable and maintained!"
     echo "Check it out: https://github.com/fastfetch-cli/fastfetch"
